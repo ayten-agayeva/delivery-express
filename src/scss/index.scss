@@ -3611,6 +3611,23 @@ main {
 .visible_m {
 	display: none;
 }
+.page_link_list {
+	ul {
+		li {
+			a {
+				display: block;
+				font-size: rem(16);
+				font-weight: 500;
+				padding: rem(20);
+				color: #333;
+			}
+			border-top: 1px solid #ccc;
+			&:first-child {
+				border-top: 0;
+			}
+		}
+	}
+}
 @include screen('mobile') {
 	.hidden_m {
 		display: none;
