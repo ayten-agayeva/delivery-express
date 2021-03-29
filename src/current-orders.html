@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <ul>
+                        <li><a href="" title="">My addresses abroad</a></li>
+                        <li><a href="" title="">My packages</a></li>
+                        <li><a href="" title="">Declare beforehand</a></li>
+                        <li><a href="" title="">Order for me</a></li>
+                        <li><a href="" title="">Current order</a></li>
+                        <li><a href="" title="">Courier</a></li>
+                        <li><a href="" title="">Azerpost Delivery</a></li>
+                        <li><a href="" title="">Wallet</a></li>
+                        <li><a href="" title="">Family profile</a></li>
+                        <li><a href="" title="">Trusted Persons</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6 col-lg-3">
+                            <a href="" class="item">
+                                <label>Current Month’s Order</label>
+                                <div class="order">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-6 col-lg-3">
+                            <a href="" class="item">
+                                <label>My Dollar Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-6 col-lg-3">
+                            <a href="" class="item">
+                                <label>My Lira Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-6 col-lg-3">
+                            <a href="" class="item">
+                                <label>My Current Debts</label>
+                                <div class="debts">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Current orders</h1>
+                    </div>
+                    <div class="right_content">
+                        <table class="table data_table order_table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Product Link</th>
+                                <th scope="col">Product Price</th>
+                                <th scope="col">Cargo Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total Cost</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Order Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                    <p>Tonny Black Toprak Unisex Sneaker
+                                        <span class="alert alert-default hint--top hint--bounce hidden_m" aria-label="Color: Red, Size: 47">i</span></p>
+                                    <span class="out_of_stock">Listed items is out of stock</span>
+                                </td>
+                                <td><label>Product Price</label><p>97.12 TL</p></td>
+                                <td><label>Cargo Price</label><p>5.00 TL</p></td>
+                                <td><label>Quantity</label><p>5</p></td>
+                                <td><label>Total Cost</label><p>102.12 TL</p></td>
+                                <td>
+                                    <label>Status</label>
+                                    <p class="denied">Denied <span class="alert hint--top hint--bounce hidden_m" aria-label="Listed items is out of stock">i</span></p>
+                                </td>
+                                <td><label>Order Date</label><p>09.12.2020</p></td>
+                                <td class="visible_m">
+                                    <p>Color: Red</p>
+                                    <p>Size: 47</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <p>Tonny Black Toprak Unisex Sneaker
+                                        <span class="alert alert-default hint--top hint--bounce hidden_m" aria-label="Color: Red, Size: 47">i</span></p>
+                                </td>
+                                <td><label>Product Price</label><p>97.12 TL</p></td>
+                                <td><label>Cargo Price</label><p>5.00 TL</p></td>
+                                <td><label>Quantity</label><p>5</p></td>
+                                <td><label>Total Cost</label><p>102.12 TL</p></td>
+                                <td>
+                                    <label>Status</label>
+                                    <p class="waiting">Waiting to order</p>
+                                </td>
+                                <td><label>Order Date</label><p>09.12.2020</p></td>
+                                <td class="visible_m">
+                                    <p>Color: Red</p>
+                                    <p>Size: 47</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

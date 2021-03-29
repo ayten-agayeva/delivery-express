@@ -1,0 +1,179 @@
+{% extends "logged-layout.html" %}
+{% block content %}
+<main>
+    <section class="container azerpost_delivery">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <ul>
+                        <li><a href="" title="">My addresses abroad</a></li>
+                        <li><a href="" title="">My packages</a></li>
+                        <li><a href="" title="">Declare beforehand</a></li>
+                        <li><a href="" title="">Order for me</a></li>
+                        <li><a href="" title="">Current order</a></li>
+                        <li><a href="" title="">Courier</a></li>
+                        <li><a href="" title="">Azerpost Delivery</a></li>
+                        <li><a href="" title="">Wallet</a></li>
+                        <li><a href="" title="">Family profile</a></li>
+                        <li><a href="" title="">Trusted Persons</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <a href="" class="item">
+                                <label>Current Month’s Order</label>
+                                <div class="order">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Dollar Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Lira Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Current Debts</label>
+                                <div class="debts">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Azerpost Delivery</h1>
+                    </div>
+                    <div class="right_content">
+                        <div class="form details_block">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="label">Select Packages</label>
+                                            <select class="select-packages" multiple>
+                                                <option>TBA149252084201</option>
+                                                <option>DEX141045 </option>
+                                                <option>USA</option>
+                                                <option> www.amazon.com</option>
+                                                <option>USA2</option>
+                                                <option>Standart</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="label">Select City</label>
+                                            <select>
+                                                <option>Ganja</option>
+                                                <option>Baku</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="label">Post Index</label>
+                                            <input name="" class="validate[required]" type="text" placeholder="Ex.: H. Zardabi 31/53" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="label">Address</label>
+                                            <input class="validate[required]" type="text" placeholder="Ex.: H. Zardabi 31/53" />
+                                            <a href="" class="input_desc address"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="label">Phone number</label>
+                                            <input name="" class="validate[required]" data-mask="phone"  type="text" placeholder="(+994) __ ___ __ __" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="label">Select time</label>
+                                            <input class="form-control validate[required,minSize[6]] datepicker_h" autocomplete="off" type="text" placeholder="dd.mm.yyyy, HH:MM"  data-toggle="datetimepicker" />
+                                            
+                                            <span class="calendar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="additional_info">
+                                    <div class="form-group">
+                                        <label class="label">Additional info</label>
+                                        <textarea placeholder="Additional info about your custom order"></textarea>
+                                    </div>
+                                </div>
+                                <div class="details_btm text-end">
+                                    <div>
+                                        <label>Total price:<button class="info open_popup" data-target=".price_details_popup"></button></label>
+                                        <p class="price">110.00 AZN</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="button btn_default full">ORDER</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup price_details_popup">
+            <div class="popup_inner">
+                <button class="close"></button>
+                <table class="table data_table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Package</th>
+                        <th scope="col">Warehouse cost</th>
+                        <th scope="col">Delivery Cost</th>
+                        <th scope="col">Total Cost</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>TBA149252084201/ <span>DEX141045</span></td>
+                        <td><label>Warehouse cost</label>50.00 AZN</td>
+                        <td><label>Delivery Cost</label>5.00 AZN</td>
+                        <td><label>Total Cost</label>55.00 AZN</td>
+                      </tr>
+                      <tr>
+                        <td>TBA149252084201/ <span>DEX141045</span></td>
+                        <td><label>Warehouse cost</label>50.00 AZN</td>
+                        <td><label>Delivery Cost</label>5.00 AZN</td>
+                        <td><label>Total Cost</label>55.00 AZN</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="grand_total">
+                    <label>Grand total:</label>
+                    <span class="text">110.00 AZN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

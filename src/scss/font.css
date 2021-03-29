@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'FuturaMC';
+  src: url('../fonts/FuturaMCDemi.eot');
+  src: url('../fonts/FuturaMCDemi.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaMCDemi.svg#FuturaMCDemi') format('svg'),
+       url('../fonts/FuturaMCDemi.ttf') format('truetype'),
+       url('../fonts/FuturaMCDemi.woff') format('woff'),
+       url('../fonts/FuturaMCDemi.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'FuturaMC';
+  src: url('../fonts/FuturaMCBold.eot');
+  src: url('../fonts/FuturaMCBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaMCBold.svg#FuturaMCBold') format('svg'),
+       url('../fonts/FuturaMCBold.ttf') format('truetype'),
+       url('../fonts/FuturaMCBold.woff') format('woff'),
+       url('../fonts/FuturaMCBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaMC';
+  src: url('../fonts/FuturaMCMedium.eot');
+  src: url('../fonts/FuturaMCMedium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaMCMedium.svg#FuturaMCMedium') format('svg'),
+       url('../fonts/FuturaMCMedium.ttf') format('truetype'),
+       url('../fonts/FuturaMCMedium.woff') format('woff'),
+       url('../fonts/FuturaMCMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'FuturaMC';
+  src: url('../fonts/FuturaMCLight.eot');
+  src: url('../fonts/FuturaMCLight.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaMCLight.svg#FuturaMCLight') format('svg'),
+       url('../fonts/FuturaMCLight.ttf') format('truetype'),
+       url('../fonts/FuturaMCLight.woff') format('woff'),
+       url('../fonts/FuturaMCLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'FuturaMC';
+  src: url('../fonts/FuturaMCBook.eot');
+  src: url('../fonts/FuturaMCBook.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaMCBook.svg#FuturaMCBook') format('svg'),
+       url('../fonts/FuturaMCBook.ttf') format('truetype'),
+       url('../fonts/FuturaMCBook.woff') format('woff'),
+       url('../fonts/FuturaMCBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}

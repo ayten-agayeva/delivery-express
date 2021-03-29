@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <ul>
+                        <li><a href="" title="">My addresses abroad</a></li>
+                        <li><a href="" title="">My packages</a></li>
+                        <li><a href="" title="">Declare beforehand</a></li>
+                        <li><a href="" title="">Order for me</a></li>
+                        <li><a href="" title="">Current order</a></li>
+                        <li><a href="" title="">Courier</a></li>
+                        <li><a href="" title="">Azerpost Delivery</a></li>
+                        <li><a href="" title="">Wallet</a></li>
+                        <li><a href="" title="">Family profile</a></li>
+                        <li><a href="" title="">Trusted Persons</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="item">
+                                <label>Current Month’s Order</label>
+                                <div class="order">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Dollar Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Lira Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Current Debts</label>
+                                <div class="debts">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Courier</h1>
+                    </div>
+                    <div class="right_content">
+                        <div class="form details_block">
+                            <form>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="label">Select Packages</label>
+                                            <select class="select-packages" multiple>
+                                                <option>TBA149252084201</option>
+                                                <option>DEX141045 </option>
+                                                <option>USA</option>
+                                                <option> www.amazon.com</option>
+                                                <option>USA2</option>
+                                                <option>Standart</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="label">Address</label>
+                                            <input class="form-control" type="text" placeholder="Ex.: H. Zardabi 31/53" />
+                                            <a href="" class="input_desc address"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="label">Phone number</label>
+                                            <input name="" class="validate[required]" data-mask="phone"  type="text" placeholder="(+994) __ ___ __ __" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="label">Select time</label>
+                                            <input class="form-control validate[required,minSize[6]] datepicker_h" autocomplete="off" type="text" placeholder="dd.mm.yyyy, HH:MM" />
+                                            <span class="calendar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="additional_info">
+                                    <div class="form-group">
+                                        <label class="label">Additional info</label>
+                                        <textarea placeholder="Additional info about your custom order"></textarea>
+                                    </div>
+                                </div>
+                                <div class="details_btm text-end">
+                                    <div>
+                                        <label>Total price:</label>
+                                        <p class="price">110.00 AZN</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="button btn_default full">ORDER</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+{% block content %}
+<main class="contact">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">HOME</a></li>
+              <li class="breadcrumb-item active" aria-current="page">contact</li>
+            </ol>
+        </nav>
+    </div>
+    <section class="container">
+        <div class="sec_title">
+            <h1>How to contact with us?</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <h4 class="contact_title">Contact information</h4>
+                <div class="item">
+                    <div class="icon"><span class="location"></span></div>
+                    <div class="content">
+                        <label>Address:</label>
+                        <p class="text">Azerbaijan, Baku, st. Dilara Aliyeva 
+                            235, 28 May, Railway Station 2nd floor
+                            AZ 1020</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon"><span class="business_hours"></span></div>
+                    <div class="content">
+                        <label>Warehouse and Cash desk:</label>
+                        <p class="text">Every day 08:00 a.m. - 10:00 p.m.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon"><span class="customer_service"></span></div>
+                    <div class="content">
+                        <label>Customer service:</label>
+                        <p class="text">info@dynamex.az</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon"><span class="for_partnership"></span></div>
+                    <div>
+                        <label>For partnership:</label>
+                        <p class="text">hr@dynamex.az</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div id="contact_maps" class="maps" data-maps="true" data-zoom="11" data-lat="40.47645" data-lng="49.78947"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="form">
+                <form method="" class="validation" action="">
+                    <h4 class="contact_title">Contact Form</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="label">Name</label>
+                                        <input name="name" class="validate[required,minSize[6]]" type="text" placeholder="Name" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="label">ID Number</label>
+                                        <input name="number" class="validate[required,minSize[6]]" type="text" placeholder="ID Number" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="label">E-mail address</label>
+                                        <input name="" class="validate[required,minSize[6]]" type="text" placeholder="E-mail address" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="label">Phone number</label>
+                                        <input name="" class="validate[required]" data-mask="phone"  type="text" placeholder="Phone number" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="label">Reason to write</label>
+                                        <select>
+                                            <option>General</option>
+                                            <option>Standart</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="label">Your message</label>
+                                <textarea placeholder="Shop name, tracking number, product name and etc."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="button btn_default">SEND</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

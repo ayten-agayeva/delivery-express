@@ -1,0 +1,23 @@
+.DS_Store
+
+node_modules/*
+
+dist/*
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+yarn.lock
+yarn-error.log
+error_log

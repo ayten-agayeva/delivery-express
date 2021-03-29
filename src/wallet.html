@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <section class="container wallet_page">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <ul>
+                        <li><a href="" title="">My addresses abroad</a></li>
+                        <li><a href="" title="">My packages</a></li>
+                        <li><a href="" title="">Declare beforehand</a></li>
+                        <li><a href="" title="">Order for me</a></li>
+                        <li><a href="" title="">Current order</a></li>
+                        <li><a href="" title="">Courier</a></li>
+                        <li><a href="" title="">Azerpost Delivery</a></li>
+                        <li><a href="" title="">Wallet</a></li>
+                        <li><a href="" title="">Family profile</a></li>
+                        <li><a href="" title="">Trusted Persons</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="item">
+                                <label>Current Month’s Order</label>
+                                <div class="order">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Dollar Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Lira Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="" class="item">
+                                <label>My Current Debts</label>
+                                <div class="debts">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Wallet</h1>
+                    </div>
+                    <div class="wallet">
+                        <div class="form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        <div class="item dollar">
+                                            <label>My Dollar Balance</label>
+                                            <span class="desc">299.00$</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input_wrap">
+                                                <label class="label">Increase Delivery Balance</label>
+                                                <input type="text" placeholder="Ex.: 999.99" />
+                                                <span class="input_desc">USD</span>
+                                            </div>
+                                            <button type="button" class="button btn_default">INCREASE</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="item lira">
+                                            <label>My Lira Balance</label>
+                                            <span class="desc">299.00$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <label class="recent_transactions">Recent transactions</label>
+                    <div class="right_content">
+                        <table class="table data_table wallet_table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Purpose</th>
+                                <th scope="col">Operation number</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><p>Delivery for order TBA149252084201</p></td>
+                                <td><p class="operation_numb">163906848</p></td>
+                                <td><p class="amount_minus">- 5.95$ (10.13 AZN)</p></td>
+                                <td><p class="date">07.08.2020, 17:47</p></td>
+                              </tr>
+                              <tr>
+                                <td><p>Delivery for order TBA149252084201</p></td>
+                                <td><p>163906848</p></td>
+                                <td><p class="amount_plus">- 5.95$ (10.13 AZN)</p></td>
+                                <td><p class="date">07.08.2020, 17:47</p></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

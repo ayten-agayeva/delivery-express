@@ -1,0 +1,199 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="side_menu">
+                    <ul>
+                        <li><a href="" title="">My addresses abroad</a></li>
+                        <li><a href="" title="">My packages</a></li>
+                        <li><a href="" title="">Declare beforehand</a></li>
+                        <li><a href="" title="">Order for me</a></li>
+                        <li><a href="" title="">Current order</a></li>
+                        <li><a href="" title="">Courier</a></li>
+                        <li><a href="" title="">Azerpost Delivery</a></li>
+                        <li><a href="" title="">Wallet</a></li>
+                        <li><a href="" title="">Family profile</a></li>
+                        <li><a href="" title="">Trusted Persons</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account_top_fix">
+                    <div class="row">
+                        <div class="col-xs-3 col-md-3">
+                            <a href="" class="item">
+                                <label>Current Month’s Order</label>
+                                <div class="order">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 col-md-3">
+                            <a href="" class="item">
+                                <label>My Dollar Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 col-md-3">
+                            <a href="" class="item">
+                                <label>My Lira Balance</label>
+                                <div class="balance">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 col-md-3">
+                            <a href="" class="item">
+                                <label>My Current Debts</label>
+                                <div class="debts">
+                                    <div class="img"></div>
+                                    <span class="desc">299.00 $</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_content_wrap">
+                    <div class="sec_title">
+                        <h1>Declare Beforehand</h1>
+                    </div>
+                    <div class="right_content">
+                        <table class="table data_table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Shop</th>
+                                <th scope="col">Track ID / Custom ID</th>
+                                <th scope="col">Package Price</th>
+                                <th scope="col">Weight</th>
+                                <th scope="col">Delivery</th>
+                                <th scope="col" colspan="2">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><p>www.amazon.com</p></td>
+                                <td><p>TBA149252084201<span class="track_id">DEX141045</span></p></td>
+                                <td><p>309.00 $</p></td>
+                                <td><p></p>0.500 kg</td>
+                                <td><p>4.45 $ <span class="price">7.56 AZN</span></p></td>
+                                <td><p class="status">In foreign depo <span class="date">09.12.2020</span></p></td>
+                                <td>
+                                    <div class="data_btn">
+                                        <p class="pay paid">Paid</p>
+                                        <span class="alert hint--top hint--bounce" aria-label="Declare your package in Smart Customs.">i</span>
+                                        <div class="btn-group dropstart">
+                                            <button type="button" class="btn btn-secondary drop_icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item edit" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item open_popup" data-target=".package_details_popup">Info</a></li>
+                                                <li><a class="dropdown-item delete" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><p>www.amazon.com</p></td>
+                                <td><p>TBA149252084201<span class="track_id">DEX141045</span></p></td>
+                                <td><p>309.00 $</p></td>
+                                <td><p></p>0.500 kg</td>
+                                <td><p>4.45 $ <span class="price">7.56 AZN</span></p></td>
+                                <td><p class="status">In foreign depo <span class="date">09.12.2020</span></p></td>
+                                <td>
+                                    <div class="data_btn">
+                                        <a href="" class="button btn_default pay">Pay</a>
+                                        <div class="btn-group dropstart">
+                                            <button type="button" class="btn btn-secondary drop_icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item edit" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Info</a></li>
+                                                <li><a class="dropdown-item delete" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup package_details_popup">
+            <div class="popup_inner">
+                <div class="popup_header">
+                    <div class="h_left">
+                        <p class="store">www.amazon.com</p>
+                        <p>TBA149252084201</p>
+                        <p class="track_id">DEX141045</p>
+                    </div>
+                    <button class="close"></button>
+                </div>
+                <table class="table data_table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Link / Category</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Clothes</td>
+                        <td>5</td>
+                        <td>45.00 $</td>
+                      </tr>
+                      <tr>
+                        <td>Phone accessories</td>
+                        <td>3</td>
+                        <td>45.00 $</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="package_status">
+                    <label>Tracking</label>
+                    <ul>
+                        <li class="past">
+                            <div class="desc">
+                                <span class="title">Waiting package</span>
+                                <span class="date">09.12.2020</span>
+                            </div>
+                        </li>
+                        <li class="past">
+                            <div class="desc">
+                                <span class="title">In foreign depo</span>
+                                <span class="date">09.12.2020</span>
+                            </div>
+                        </li>
+                        <li class="past">
+                            <div class="desc">
+                                <span class="title">Sent</span>
+                                <span class="date">09.12.2020</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="desc">
+                                <span class="title">In local depo</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="desc">
+                                <span class="title">Delivered</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
