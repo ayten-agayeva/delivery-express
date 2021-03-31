@@ -325,6 +325,11 @@ ul {
 		line-height: rem(19);
 		padding: rem(14) rem(28);
 		margin-right: rem(8);
+		-webkit-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		&:hover {
+			color: #ea8e33;
+		}
 	}
 	.sign_in {
 		font-weight: 600;
@@ -440,7 +445,7 @@ ul {
 				background-color: #EDA762;
 				position: absolute;
 				left: 9.5px;
-				top: 9px;
+				top: 10px;
 				color: #fff;
 				font-size: 12px;
 				font-weight: 500;
@@ -977,8 +982,8 @@ footer {
 			font-weight: 500;
 			font-size: rem(64);
 			line-height: rem(66);
-			max-width: rem(610);
-			margin-top: 62px;
+			max-width: 559px;
+			margin-right: 80px;
 			
 			@include screen('(max-width: 991px)')   {
 				font-size: rem(40);
@@ -1154,6 +1159,7 @@ section {
 		@include screen('mobile') {
 			h1 {
 				font-size: rem(36);
+				line-height: rem(42);
 			}
 			&.limited {
 				h1 {
@@ -1776,7 +1782,20 @@ section {
 		text-align: center !important;
 	}
 }
-
+.news_page {
+	.sec_title {
+		flex-direction: column;
+    	align-items: flex-start;
+	}
+	.item_wrap {
+		margin-bottom: rem(60);
+	}
+	@include screen('mobile') {
+		.item_wrap {
+			margin-bottom: rem(32);
+		}
+	}
+}
 .tariffs {
 	.tabs1 {
 		margin-top: 0 !important;
@@ -3228,7 +3247,7 @@ main {
 	.detail {
 		padding-right: rem(100);
 		@include screen('mobile') {
-			padding-right: 0;
+			padding-right: calc(var(--bs-gutter-x)/ 2);
 		}
 		.img {
 			width: 100%;
@@ -3263,6 +3282,9 @@ main {
 				a {
 					margin-top: rem(21);
 				}
+			}
+			@include screen('mobile') {
+				padding-bottom: rem(30);
 			}
 		}
 	}
