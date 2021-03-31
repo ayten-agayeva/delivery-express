@@ -1,8 +1,29 @@
 $(document).ready(() => {
-	$("select").selectric({
+
+	
+	$("select:not(.select-packages)").selectric({
 		labelBuilder: function (text) {
-			return '<span class="' + text.className + '">' + text.text + "</span>";
+		 return '<span class="' + text.className + '">' + text.text + "</span>";
+		}
+	});
+
+	//multiselect
+	const displayLimit = $("select.select-packages").width() > 700 ? 4 : 1;
+	$("select.select-packages").selectric({
+		labelBuilder: function (option) {
+			if(option.text=="..."){
+				const l = $("select.select-packages option:selected").length - displayLimit;
+				return '<span class="more"> and ' + l + " more</span>";
+			}
+			else return '<span class="with-slash">' + option.text + "</span>";
 		},
+		multiple: {
+			separator: '',       
+			keepMenuOpen: true, 
+			maxLabelEntries: displayLimit
+		},
+		disableOnMobile: false,
+		nativeOnMobile: false
 	});
 
 	$("body").on("click", ".open_popup", function (e) {
@@ -205,26 +226,7 @@ $(document).ready(() => {
 	//datepicker
 	$('.datepicker_h').datetimepicker({format:"DD.MM.YYYY, HH:mm"});
 	
-	//multiselect
-	$("select:not(.select-packages)").selectric({
-		labelBuilder: function (text) {
-		 return '<span class="' + text.className + '">' + text.text + "</span>";
-		},
-	});
-	$("select.select-packages").selectric({
-	labelBuilder: function (option) {
-		if(option.text=="..."){
-		const l = $("select.select-packages option:selected").length - 4;
-		return '<span class="more"> and ' + l + " more</span>";
-		}
-		else return '<span class="with-slash">' + option.text + "</span>";;
-	},
-	multiple: {
-		separator: '',       // Type: String.             Description: Items separator.
-		keepMenuOpen: true,    // Type: Boolean.            Description: Close after an item is selected.
-		maxLabelEntries: 4 // Type: Boolean or Integer. Description: Max selected items do show.
-		}
-	});
+
 	//spinner
 	var numberSpinner = (function () {
 		$(".number-spinner>.ns-btn>a").click(function () {

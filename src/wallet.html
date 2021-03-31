@@ -67,12 +67,36 @@
                     <div class="wallet">
                         <div class="form">
                             <form>
-                                <div class="row">
-                                    <div class="col-12 col-lg-8">
-                                        <div class="item dollar">
-                                            <label>My Dollar Balance</label>
+                                <div class="tabs_flex tab_with_label">
+                                    <ul class="tabs tabs1" data-target=".list_tab">
+                                        <li class="dollar active">
+                                            <a>My Dollar Balance</a>
                                             <span class="desc">299.00$</span>
-                                        </div>
+                                            <div class="form-group visible_m">
+                                                <div class="input_wrap">
+                                                    <label class="label">Increase Delivery Balance</label>
+                                                    <input type="text" placeholder="Ex.: 999.99" />
+                                                    <span class="input_desc">USD</span>
+                                                </div>
+                                                <button type="button" class="button btn_default">INCREASE</button>
+                                            </div>
+                                        </li>
+                                        <li class="lira">
+                                            <a>My Lira Balance</a>
+                                            <span class="desc">299.00$</span>
+                                            <div class="form-group visible_m">
+                                                <div class="input_wrap">
+                                                    <label class="label">Increase Delivery Balance</label>
+                                                    <input type="text" placeholder="Ex.: 999.99" />
+                                                    <span class="input_desc">USD</span>
+                                                </div>
+                                                <button type="button" class="button btn_default">INCREASE</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list_tab tabs_content">
+                                    <div class="active list_content" data-match-height=".item">
                                         <div class="form-group">
                                             <div class="input_wrap">
                                                 <label class="label">Increase Delivery Balance</label>
@@ -82,10 +106,14 @@
                                             <button type="button" class="button btn_default">INCREASE</button>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-4">
-                                        <div class="item lira">
-                                            <label>My Lira Balance</label>
-                                            <span class="desc">299.00$</span>
+                                    <div data-match-height=".item" class="list_content">
+                                        <div class="form-group">
+                                            <div class="input_wrap">
+                                                <label class="label">Increase Lira Balance</label>
+                                                <input type="text" placeholder="Ex.: 999.99" />
+                                                <span class="input_desc">USD</span>
+                                            </div>
+                                            <button type="button" class="button btn_default">INCREASE</button>
                                         </div>
                                     </div>
                                 </div>
