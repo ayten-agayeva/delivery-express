@@ -247,3 +247,19 @@
 	display: inline-block;
 	padding-left:5px;
    }
+.select_packages_wrap {
+	li {
+		position: relative;
+		&.selected {
+			&:before {
+				content: "";
+				width: 24px;
+				height: 24px;
+				position: absolute;
+				right: 15px;
+				background: url(../images/done.svg) center no-repeat;
+				background-size: 17px;
+			}
+		}
+	}
+}

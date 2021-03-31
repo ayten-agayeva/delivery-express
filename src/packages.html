@@ -22,7 +22,7 @@
             <div class="col-lg-9">
                 <div class="account_top_fix">
                     <div class="row">
-                        <div class="col-xs-3 col-md-3">
+                        <div class="col-6 col-md-3">
                             <a href="" class="item">
                                 <label>Current Month’s Order</label>
                                 <div class="order">
@@ -31,7 +31,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xs-3 col-md-3">
+                        <div class="col-6 col-md-3">
                             <a href="" class="item">
                                 <label>My Dollar Balance</label>
                                 <div class="balance">
@@ -40,7 +40,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xs-3 col-md-3">
+                        <div class="col-6 col-md-3">
                             <a href="" class="item">
                                 <label>My Lira Balance</label>
                                 <div class="balance">
@@ -49,7 +49,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xs-3 col-md-3">
+                        <div class="col-6 col-md-3">
                             <a href="" class="item">
                                 <label>My Current Debts</label>
                                 <div class="debts">
@@ -62,10 +62,10 @@
                 </div>
                 <div class="right_content_wrap">
                     <div class="sec_title">
-                        <h1>Declare Beforehand</h1>
+                        <h1>My Packages</h1>
                     </div>
                     <div class="right_content">
-                        <table class="table data_table">
+                        <table class="table data_table packages_table">
                             <thead>
                               <tr>
                                 <th scope="col">Shop</th>
@@ -80,14 +80,15 @@
                               <tr>
                                 <td><p>www.amazon.com</p></td>
                                 <td><p>TBA149252084201<span class="track_id">DEX141045</span></p></td>
-                                <td><p>309.00 $</p></td>
-                                <td><p></p>0.500 kg</td>
-                                <td><p>4.45 $ <span class="price">7.56 AZN</span></p></td>
-                                <td><p class="status">In foreign depo <span class="date">09.12.2020</span></p></td>
+                                <td><label>Shop</label><p>www.amazon.com</p></td>
+                                <td><label>Package Price</label><p>309.00 $</p></td>
+                                <td><label>Weight</label><p>0.500 kg</p></td>
+                                <td><label>Delivery</label><p>4.45 $ <span class="price">7.56 AZN</span></p></td>
+                                <td><label>Status</label><p class="status">In foreign depo <span class="date">09.12.2020</span></p></td>
                                 <td>
                                     <div class="data_btn">
                                         <p class="pay paid">Paid</p>
-                                        <span class="alert hint--top hint--bounce" aria-label="Declare your package in Smart Customs.">i</span>
+                                        <span class="alert hint--top hint--bounce hidden_m" aria-label="Declare your package in Smart Customs.">i</span>
                                         <div class="btn-group dropstart">
                                             <button type="button" class="btn btn-secondary drop_icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                             </button>
@@ -102,11 +103,16 @@
                               </tr>
                               <tr>
                                 <td><p>www.amazon.com</p></td>
-                                <td><p>TBA149252084201<span class="track_id">DEX141045</span></p></td>
-                                <td><p>309.00 $</p></td>
-                                <td><p></p>0.500 kg</td>
-                                <td><p>4.45 $ <span class="price">7.56 AZN</span></p></td>
-                                <td><p class="status">In foreign depo <span class="date">09.12.2020</span></p></td>
+                                <td>
+                                    <p>TBA149252084201<span class="track_id">DEX141045</span></p>
+                                    <span class="alert_red_m visible_m">Declare your package
+                                        in Smart Customs.</span>
+                                </td>
+                                <td><label>Shop</label><p>www.amazon.com</p></td>
+                                <td><label>Package Price</label><p>309.00 $</p></td>
+                                <td><label>Weight</label><p>0.500 kg</p></td>
+                                <td><label>Delivery</label><p>4.45 $ <span class="price">7.56 AZN</span></p></td>
+                                <td><label>Status</label><p class="status">In foreign depo <span class="date">09.12.2020</span></p></td>
                                 <td>
                                     <div class="data_btn">
                                         <a href="" class="button btn_default pay">Pay</a>
@@ -148,14 +154,14 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Clothes</td>
-                        <td>5</td>
-                        <td>45.00 $</td>
+                        <td><p>Clothes</p></td>
+                        <td><p>5</p></td>
+                        <td><p>45.00 $</p></td>
                       </tr>
                       <tr>
-                        <td>Phone accessories</td>
-                        <td>3</td>
-                        <td>45.00 $</td>
+                        <td><p>Phone accessories</p></td>
+                        <td><p>5</p></td>
+                        <td><p>45.00 $</p></td>
                       </tr>
                     </tbody>
                 </table>
@@ -174,7 +180,7 @@
                                 <span class="date">09.12.2020</span>
                             </div>
                         </li>
-                        <li class="past">
+                        <li class="past just">
                             <div class="desc">
                                 <span class="title">Sent</span>
                                 <span class="date">09.12.2020</span>
