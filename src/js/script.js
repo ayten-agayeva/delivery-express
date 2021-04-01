@@ -7,6 +7,47 @@ $(document).ready(() => {
 		}
 	});
 
+	if ($('#map').length) {
+		var lat = parseFloat($('#map').data('lat'));
+		var lng = parseFloat($('#map').data('lng'));
+	  // When the window has finished loading create our google map below
+	  google.maps.event.addDomListener(window, 'load', init);
+	  function init() {
+		// Basic options for a simple Google Map
+		// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+		var mapOptions = {
+		  // How zoomed in you want the map to start at (always required)
+		  zoom: 16,
+		  disableDefaultUI: false,
+		  scrollwheel: true,
+		  navigationControl: true,
+		  mapTypeControl: false,
+		  scaleControl: true,
+		  draggable: true,
+		  center: new google.maps.LatLng(lat , lng),
+	
+		};
+	
+		// Get the HTML DOM element that will contain your map
+		// We are using a div with id="map" seen below in the <body>
+		var mapElement = document.getElementById('map');
+	
+		// Create the Google Map using our element and options defined above
+		var map = new google.maps.Map(mapElement, mapOptions);
+		var markerImage = {
+			url: '../images/map_img.svg',
+	
+			origin: new google.maps.Point(0, 0),
+		}
+		// Let's also add a marker while we're at it
+		var marker = new google.maps.Marker({
+		  position: new google.maps.LatLng(lat, lng),
+		  map: map,
+		  icon: markerImage,
+		});
+	  }
+	}
+
 	//multiselect
 	const displayLimit = $("select.select-packages").width() > 700 ? 4 : 1;
 	$("select.select-packages").selectric({

@@ -38,7 +38,7 @@
 	<div class="container how_it_work">
 		<div class="sec_title">
 			<h1>How Do We Work?</h1>
-			<a href="" class="button btn_default video">Video Instruction</a>
+			<a href="" class="button btn_default video open_popup" data-target=".video_instruction">Video Instruction</a>
 		</div>
 		<div class="row">
 			<div class="col-lg-5">
@@ -195,8 +195,8 @@
 							<tbody>
 							  <tr>
 								<td><div>0.001 kg – <br/>0.100 kg</div></td>
-								<td><div>1.5<sub>$</sub></div></td>
 								<td><div>2.5<sub>$</sub></div></td>
+								<td><div>3.5<sub>$</sub></div></td>
 							  </tr>
 							  <tr>
 								<td><div>0.101 kg – <br/>0.250 kg</div></td>
@@ -228,12 +228,12 @@
 							<tbody>
 								<tr>
 									<td><div>0.001 kg – <br/>0.100 kg</div></td>
-									<td><div>1.5<sub>$</sub></div></td>
 									<td><div>2.5<sub>$</sub></div></td>
+									<td><div>3.5<sub>$</sub></div></td>
 								</tr>
 								<tr>
 									<td><div>0.101 kg – <br/>0.250 kg</div></td>
-									<td><div>2.2<sub>$</sub></div></td>
+									<td><div>4.2<sub>$</sub></div></td>
 									<td><div>3.2<sub>$</sub></div></td>
 								</tr>
 								<tr>
@@ -557,4 +557,12 @@
 		<div class="link_wrap text-end"><a href="" class="all_link">SEE ALL STORES</a></div>
 	</div>
 </section>
+<div class="popup video_instruction">
+	<div class="popup_inner">
+		<button class="close"></button>
+		<video autoplay="" loop="" controls="">
+			<source type="video/mp4" src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
+		</video>
+	</div>
+</div>
 {% endblock %}

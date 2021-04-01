@@ -59,7 +59,8 @@
 	}
 	input[type="text"],
 	input[type="email"],
-	input[type="password"] {
+	input[type="password"],
+	textarea {
 		&:active,
 		&:focus {
 			border-color: #EDA762;
