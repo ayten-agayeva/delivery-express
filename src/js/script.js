@@ -193,56 +193,7 @@ $(document).ready(() => {
 			},
 		});
 	}
-
-	$.maps = {
-		key:window.MAPS_API_KEY,
-		loaded: false,
-		loading: false,
-		callbacks : [],
-		load(callback){
-		  $.maps.add_callback(callback);
-		  if($.maps.loaded)$.maps.run_callback();
-		  else if(!$.maps.loading){
-			$.maps.loading = true;
-			$.getScript('https://maps.googleapis.com/maps/api/js?key='+ $.maps.key +'&callback=$.maps.ready&language=az&region=AZ');
-		  }
-		},
-		ready(){
-		  $.maps.loaded = true;
-		  $.maps.run_callback();
-		},
-		add_callback(fn){
-		  if(typeof fn !== 'undefined')$.maps.callbacks.push(fn);
-		},
-		run_callback(){
-		  if($.maps.callbacks.length>0){
-			$.each($.maps.callbacks,(index,callback)=>{
-			  if($.isFunction(callback))callback();
-			  else if(typeof window[callback] !== "undefined")window[callback]();
-			});
-			$.maps.callbacks = [];
-		  }
-		}
-	  };
-
-	$('[data-maps]').each(function(){
-		const id = $(this).attr('id');
-		const coords = {lat:$(this).attr('data-lat')*1,lng:$(this).attr('data-lng')*1};
-		const zoom = $(this).attr('data-zoom') ? $(this).attr('data-zoom')*1 : 11;
-		$.maps.load(()=>{
-		  const map = new google.maps.Map(document.getElementById(id), {
-			zoom: zoom,
-			center: coords
-		  });
-		  const marker = new google.maps.Marker({
-			position: coords,
-			icon:'/images/map/select_map_pin.png'
-		  });
-		  // adds the marker on the map
-		  marker.setMap(map);
-		});
-	  });
-
+	
 	if($('.faq').length){
 		$('.faq .item h3').click(function(){
 		  var item = $(this).parent();

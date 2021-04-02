@@ -374,3 +374,13 @@ form {
 		}
 	}
 }
+.calc {
+	.form-check-input[type=checkbox] {
+		border: 1px solid rgba(0, 0, 0, 0.05);
+	}
+
+	
+	.form-check-input:checked[type=checkbox] {
+		border-color: #EDA762;
+	}
+}
