@@ -157,9 +157,11 @@ ul {
 				display: none;
 			}
 		}
-		.logo {
-			img {
-				width: 130px;
+		@include screen('(min-width: 991px)') {
+			.logo {
+				img {
+					width: 130px;
+				}
 			}
 		}
 		.inner {
@@ -1824,9 +1826,118 @@ section {
 		}
 	}
 }
+.bootstrap-datetimepicker-widget {
+	margin: 12px 0 !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	box-shadow: 0 10px 20px #00000010;
+	&.top {
+		&:before {
+			border-top: 7px solid #fff !important;
+		}
+	}
+	&.bottom {
+		&:before {
+			border-bottom-color: #fff !important;
+		}
+	}
+	td {
+		span {
+			&:hover {
+				background: #f2f2f29c !important;
+			}
+		}
+	}
+}
+.fa-clock-o {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	&:after {
+		content: "\f017";
+		display: block;
+		height: 2.5em;
+		width: 40px;
+		font-size: 19px;
+		color: #ccc;
+		font-family: "Font Awesome 5 Free";
+	}
+}
+.picker-switch {
+	.fa-calendar {
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		&::before {
+			content: "\f272" !important;
+			display: block;
+			height: 2.5em;
+			width: 40px;
+			font-size: 19px;
+			color: #ccc;
+			font-family: "Font Awesome 5 Free";
+		}
+	}
+}
+.timepicker-picker {
+	.fa-arrow-up, .fa-arrow-down {
+		color: #EDA762;
+	}
+	.table-condensed {
+		td {
+			height: 30px !important;
+			line-height: 30px !important;
+			span {
+				height: 30px !important;
+				display: flex !important;
+				align-items: center;
+				justify-content: center;
+				&.timepicker-hour, &.timepicker-minute {
+					font-weight: 500 !important;
+				}
+			}
+		}
+	}
+}
 .datepicker {
 	font-family: 'FuturaMC' !important;
+	
+	.fa-calendar-check-o {
+		display: block;
+		color: #EDA762 !important;
+		
+	}
+	
+	thead {
+		tr {
+			&:first-child {
+				border: 0 !important;
+				th {
+					border-bottom-width: 0 !important;
+					&:hover {
+						background: transparent !important;
+					}
+				}
+			}
+			&:nth-child(2) {
+				border-color: #fff !important;
+				th {
+					font-weight: 500 !important;
+					font-size: rem(16) !important;
+					border-bottom-color: #e2e2e2 !important;
+				}
+			}
+		}
+	}
+	tr {
+		border: 0 !important;
+			td {
+				border: 3px solid #fff !important;
+				background-color: #f2f2f29c!important;
+			}
+	}
 	.day {
+		padding: 6px 11px;
 		&.active {
 			color: #fff;
 			background-color: #EDA762 !important;
@@ -1834,12 +1945,9 @@ section {
 			&:hover {
 				color: #fff !important;
 			}
-		}
-	}
-	.fa-calendar-check-o {
-		color: #EDA762 !important;
-		&::before {
-			content: "\f274";
+			&::before {
+				content: none !important;
+			}
 		}
 	}
 }
@@ -1985,6 +2093,9 @@ main {
 		}
 	}
 }
+.bootstrap-datetimepicker-widget.dropdown-menu {
+	width: auto !important;
+}
 .faq {
 	.catg_block {
 		border: 1px solid #CCCCCC;
@@ -2004,7 +2115,7 @@ main {
 					font-weight: 500;
 					font-size: rem(24);
 					line-height: rem(30);
-					padding-top: rem(24);
+					padding-top: rem(30);
 					-webkit-transition: all .4s ease-in-out;
 					transition: all .4s ease-in-out;
 					&:hover {
@@ -3318,12 +3429,13 @@ main {
 	position: absolute;
 	right: 0;
 	top: 41px;
-	button {
+	span {
 		display: block;
 		width: 24px;
 		height: 24px;
 		background-color: transparent !important;
 		border: 0 !important;
+		cursor: pointer;
 		background: url(../images/help_outline-24px.svg) center no-repeat;
 		&::after {
 			content: none !important;
@@ -3359,11 +3471,12 @@ main {
 		.fin_m{
 			display: none;
 		}
-		@media only screen and (min-width: 360px) and (max-width: 667px)  {
-			transform: translate(-210.091px,-359.2727px)!important;
+		@include screen('(max-width: 667px)')  {
+			transform: translate(-209.091px,-33.2727px)!important;
 			width: 240px;
 			height: 344px;
-			transform: translate(-168.091px,-34.2727px)!important;
+		}
+		@include screen('(max-width: 991px)') {
 			.fin_desk {
 				display: none;
 			}
@@ -3521,8 +3634,7 @@ main {
 	display: none;
 	align-items: center;
 	justify-content: center;
-	backdrop-filter: blur(10px);
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.5);
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 	opacity: 0;
@@ -3533,7 +3645,7 @@ main {
 		margin: 35px 0 0 0;
 	}
 	.close{
-		background: url(../images/close_popup.svg) center no-repeat #fff;
+		background: url(../images/close_popup.svg) center center no-repeat #fff;
 		width: 26px;
 		height: 26px;
 		position: absolute;
@@ -3543,8 +3655,8 @@ main {
 		-webkit-transition: all .4s ease-in-out;
 		transition: all .4s ease-in-out;
 		&:hover {
-			background: url(../images/close-hover.svg) center no-repeat #fff;
-		};
+			background: url(../images/close-hover.svg) center center no-repeat #fff;
+		}
 	}
 	&.show {
 		display: flex !important;
@@ -3592,6 +3704,30 @@ main {
 			color: #333;
 			&.track_id {
 				color: #EDA762;
+			}
+		}
+	}
+}
+.fin_popup {
+	.popup_inner {
+		width: 30.625rem !important;
+		padding: rem(16) !important;
+		.content {
+			.col-lg-6 {
+				text-align: center;
+			}
+		}
+	}
+	@media only screen and (max-width: 991px)  {
+		.popup_inner {
+			max-width: 240px !important;
+			min-width: 240px !important;
+			.content {
+				.col-lg-6 {
+					&:last-child {
+						margin-top: rem(16);
+					}
+				}
 			}
 		}
 	}

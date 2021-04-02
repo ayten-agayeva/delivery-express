@@ -76,15 +76,15 @@
                         <div class="form-group">
                             <label class="label">FIN Number*</label>
                             <input name="" class="validate[required]" type="text" placeholder="ABC1234" />
-                            <div class="fin"><span></span>
-                                <div class="btn-group dropup">
+                            <div class="fin"><span class="open_popup" data-target=".fin_popup"></span>
+                                <!-- <div class="btn-group dropup">
                                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                     </button>
                                     <div class="dropdown-menu">
                                         <img src="images/passport-fin-hr.svg" class="fin_desk" />
                                         <img src="images/passport-fin.svg" class="fin_m" />
                                     </div>
-                                  </div>
+                                  </div> -->
                             </div>
                         </div>
                     </div>
@@ -125,6 +125,19 @@
                 <div class="popup_header"><button class="close"></button></div>
                 <div class="content">
                     <p>Login was succesfull.</p>
+                </div>
+            </div>
+        </div>
+        <div class="popup fin_popup">
+            <div class="popup_inner">
+                <button class="close"></button>
+                <div class="row content">
+                    <div class="col-12 col-lg-6">
+                        <img src="images/old-passport.png" />
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="images/new-passport.png"/>
+                    </div>
                 </div>
             </div>
         </div>
