@@ -506,6 +506,8 @@ ul {
 		width: 32px;
 		margin:0 6px;
 		border: none;
+		-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
 		&.prev,&.next {
 		  width: 32px;
 		  margin: 0;
@@ -528,6 +530,11 @@ ul {
 			border: none !important;
 			box-shadow: none;
 			outline: 0;
+		}
+		&.prev,&.next {
+			&:hover {
+				background: url(../images/arrow_hover.svg)  center no-repeat;
+			}
 		}
 	  }
 	  &.active {
@@ -1587,6 +1594,8 @@ section {
 				color: #333;
 				background: #F2F2F2;
 				padding: rem(15);
+				max-height: 73px;
+				overflow: hidden;
 			}
 			span {
 				display: block;
@@ -1946,6 +1955,11 @@ section {
 				color: #fff !important;
 			}
 			&::before {
+				content: none !important;
+			}
+		}
+		&.today {
+			::before {
 				content: none !important;
 			}
 		}
@@ -2902,7 +2916,8 @@ main {
 				.dropdown-menu {
 					min-width: auto;
 					border: none;
-					transform: translate(-26px, -36px) !important;
+					padding: 0 !important;
+					transform: translate(-26px, -31px) !important;
 					box-shadow: 0 10px 20px #00000010;
 					li {
 						a {
@@ -3242,6 +3257,12 @@ main {
 						.alert_red_m {
 							margin: 0 33px 0 18px;
 							max-width: 100% !important;
+						}
+					}
+					@include screen('(min-width: 991px)') {
+						&:nth-child(5) {
+							padding-left: rem(10);
+							padding-right: rem(10);
 						}
 					}
 				}

@@ -103,11 +103,6 @@
 			}
 		}
 	}
-	a {
-		color: #263f58;
-		font-size: 12px;
-		font-weight: 500;
-	}
 	button[type="submit"],
 	button[type="button"] {
 		color: #fff;
@@ -115,59 +110,6 @@
 		@media (max-width: 991px) {
 			padding: 0px 15px;
 		}
-	}
-	.file_input {
-		position: relative;
-		overflow: hidden;
-		height: 40px;
-		input[type="text"] {
-			position: relative;
-			z-index: 1;
-		}
-		input[type="file"] {
-			position: absolute;
-			opacity: 0;
-			line-height: 500px;
-			left: 0;
-			top: 0;
-			font-size: 500px;
-			z-index: 2;
-			cursor: pointer;
-		}
-		span.button {
-			width: 140px;
-			height: 40px;
-			display: block;
-			position: absolute;
-			right: 0;
-			top: 0;
-			background: #3caabb;
-			color: #fff;
-			font-size: 14px;
-			font-weight: 500;
-			text-align: center;
-			line-height: 40px;
-			z-index: 1;
-			border-bottom-right-radius: 4px;
-			border-top-right-radius: 4px;
-		}
-	}
-	.helper {
-		font-size: 12px;
-		color: #333333;
-		line-height: 20px;
-	}
-	.radio_label {
-		color: #505050;
-		font-size: 12px;
-		padding-right: 15px;
-		display: flex;
-		min-height: 25px;
-		align-items: center;
-	}
-	hr {
-		border-top-color: #bdd3e1 !important;
-		margin-top: 0;
 	}
 	&.success {
 		.title,
@@ -204,38 +146,6 @@
 				position: absolute;
 				bottom: 40px;
 				text-decoration: underline;
-			}
-		}
-	}
-	.check_wrap {
-		background-color: #fff;
-		height: 20px;
-		border-radius: 5px;
-		position: relative;
-		display: flex;
-		align-items: center;
-		padding-left: 15px;
-		color: #25282a;
-		span {
-			font-size: 14px;
-		}
-		.check_title {
-			border-right: 1px solid #c9cddb;
-			padding-right: 15px;
-		}
-		.radio_group {
-			display: flex;
-			width: 100%;
-			justify-content: center;
-		}
-		.form-group {
-			display: flex;
-			width: 75%;
-			align-items: center;
-		}
-		&.error {
-			.check_title {
-				color: #ef4a36;
 			}
 		}
 	}
