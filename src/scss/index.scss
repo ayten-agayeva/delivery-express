@@ -101,6 +101,7 @@ a {
 	user-select: none;
 	text-decoration: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	text-decoration: none !important;
 }
 
 button::-moz-focus-inner,
